@@ -1,0 +1,28 @@
+# Python >= 3.10
+#
+# Install PyTorch first, matched to your CUDA build:
+#   https://pytorch.org/get-started/locally/
+# The submission container is built on pytorch/pytorch:2.6.0-cuda12.4-cudnn9.
+#
+# Pins below mirror the challenge submission image (docker/requirements.txt).
+# Only nnunetv2, matplotlib and nibabel are additions needed for training,
+# evaluation and figure generation outside the container.
+
+nnunetv2==2.7.0
+
+numpy==1.26.4
+scipy==1.16.0
+SimpleITK==2.5.2
+nibabel==5.3.2
+matplotlib==3.10.3
+
+acvl-utils==0.2.5
+dynamic-network-architectures==0.4.2
+batchgenerators==0.25.1
+batchgeneratorsv2==0.3.0
+blosc2==3.5.1
+
+scikit-learn==1.7.0
+scikit-image==0.25.2
+pandas==2.3.0
+einops==0.8.1

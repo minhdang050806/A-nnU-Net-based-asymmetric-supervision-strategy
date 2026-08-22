@@ -1,0 +1,73 @@
+cff-version: 1.2.0
+title: >-
+  AURA — Asymmetric Paired-Annotation Learning for Multi-Structure ULF
+  Pediatric Brain MRI Segmentation
+message: >-
+  If you use this software, please cite both the challenge report and nnU-Net.
+type: software
+license: Apache-2.0
+repository-code: >-
+  https://github.com/minhdang050806/LISA-2026-Challenge-Report-A-nnU-Net-based-asymmetric-supervision-strategy
+abstract: >-
+  Official code release for the LISA 2026 Challenge (Task 2) report. AURA is an
+  nnU-Net-based asymmetric supervision strategy for ultra-low-field pediatric
+  brain MRI segmentation. It anchors training to the high-field-derived
+  annotation that the challenge scores, and admits the low-field-edited
+  annotation only through a bounded reliability gate driven by label
+  disagreement, anatomical boundaries, predictive uncertainty, class-specific
+  reliability, and training stage. The paired annotations are used only during
+  training; at inference the models require nothing but the ULF MRI.
+keywords:
+  - ultra-low-field MRI
+  - pediatric brain segmentation
+  - asymmetric supervision
+  - label noise
+  - nnU-Net
+  - LISA 2026
+authors:
+  - family-names: Pham
+    given-names: Ha-Hieu
+    email: hieu.ph@vinuni.edu.vn
+    affiliation: VinUni-Illinois Smart Health Center, VinUniversity, Hanoi, Vietnam
+  - family-names: Cao
+    given-names: Dang P. M.
+    affiliation: VinUni-Illinois Smart Health Center, VinUniversity, Hanoi, Vietnam
+  - family-names: Pham
+    given-names: Minh Hoang
+    affiliation: Hanoi University of Science and Technology, Hanoi, Vietnam
+  - family-names: Vo Ngoc
+    given-names: Khanh Nguyen
+    affiliation: University of Information Technology, VNU-HCM, Ho Chi Minh City, Vietnam
+  - family-names: Nguyen
+    given-names: Thanh-Huy
+    affiliation: Carnegie Mellon University, Pittsburgh, PA, USA
+  - family-names: Bagci
+    given-names: Ulas
+    affiliation: Northwestern University, Evanston, IL, USA
+  - family-names: Pham
+    given-names: Huy-Hieu
+    affiliation: VinUni-Illinois Smart Health Center, VinUniversity, Hanoi, Vietnam
+preferred-citation:
+  type: conference-paper
+  title: >-
+    LISA 2026 Challenge Report: Asymmetric Paired-Annotation Learning for
+    Multi-Structure ULF Pediatric Brain MRI Segmentation
+  collection-title: >-
+    MICCAI Challenge on Low-field pediatric brain magnetic resonance Image
+    Segmentation and quality Assurance (LISA)
+  year: 2026
+  authors:
+    - family-names: Pham
+      given-names: Ha-Hieu
+    - family-names: Cao
+      given-names: Dang P. M.
+    - family-names: Pham
+      given-names: Minh Hoang
+    - family-names: Vo Ngoc
+      given-names: Khanh Nguyen
+    - family-names: Nguyen
+      given-names: Thanh-Huy
+    - family-names: Bagci
+      given-names: Ulas
+    - family-names: Pham
+      given-names: Huy-Hieu

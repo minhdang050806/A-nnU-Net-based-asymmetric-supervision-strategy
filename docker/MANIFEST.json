@@ -1,0 +1,28 @@
+{
+  "method": "OS50+AURA",
+  "task": "LISA 2026 Task 2 multi-structure segmentation",
+  "image": "docker.synapse.org/syn74549440/lisa-os50-aura:v1",
+  "configuration": "3d_fullres",
+  "fold": 0,
+  "checkpoint": "checkpoint_best.pth",
+  "models": [
+    {
+      "weight": 0.6,
+      "dataset_id": 1,
+      "dataset": "Dataset001_LISA",
+      "trainer": "nnUNetTrainerDiceTopK10_OS50_LS005",
+      "target": "HF-derived labels"
+    },
+    {
+      "weight": 0.4,
+      "dataset_id": 2,
+      "dataset": "Dataset002_LISA_VCF",
+      "trainer": "nnUNetTrainerAURA_v0",
+      "target": "asymmetric paired HF/LF supervision"
+    }
+  ],
+  "fusion": "weighted soft-probability average followed by argmax",
+  "postprocessing": "largest 26-connected component for each label 1-11",
+  "output_pattern": "<case>_seg_prediction.nii.gz",
+  "aura_checkpoint_note": "Uses the surviving epoch-458 best checkpoint (cross-eval DSC 0.796101), not the unarchived intermediate snapshot that produced the paper's AURA DSC 0.795033."
+}

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# nnU-Net roots and model weights — never committed
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+*.pth
+*.b2nd
+
+# Docker submission: nnU-Net tree and checkpoints are assembled at build time
+docker/nnUNet/
+docker/models/
+docker/docker_test_output/
+*.zip
+
+# Predictions and scratch outputs
+*.nii
+*.nii.gz
+*.npz
+predictions/
+work/
+
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*.fdb_latexmk
+paper/*.fls
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
