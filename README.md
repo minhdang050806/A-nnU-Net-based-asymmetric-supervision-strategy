@@ -282,8 +282,3 @@ infrastructure.
 Apache License 2.0 — see [LICENSE](LICENSE). The `nnunet_extensions/` tree
 derives from nnU-Net and remains under nnU-Net's Apache 2.0 license. Challenge
 data is governed by the LISA 2026 data use agreement and is not covered here.
-
-## Contact
-
-Ha-Hieu Pham — <hieu.ph@vinuni.edu.vn> · VinUni-Illinois Smart Health Center,
-VinUniversity
