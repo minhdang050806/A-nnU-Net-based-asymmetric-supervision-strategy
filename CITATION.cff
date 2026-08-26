@@ -50,8 +50,8 @@ authors:
 preferred-citation:
   type: conference-paper
   title: >-
-    LISA 2026 Challenge Report: Asymmetric Paired-Annotation Learning for
-    Multi-Structure ULF Pediatric Brain MRI Segmentation
+    Asymmetric Paired-Annotation Learning for Multi-Structure ULF Pediatric
+    Brain MRI Segmentation
   collection-title: >-
     MICCAI Challenge on Low-field pediatric brain magnetic resonance Image
     Segmentation and quality Assurance (LISA)
