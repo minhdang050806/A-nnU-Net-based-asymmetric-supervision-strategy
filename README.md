@@ -202,10 +202,19 @@ cd docker && ./build.sh && ./test.sh <image> /path/to/input
 
 ## Model weights
 
-The two `checkpoint_best.pth` files are ~236 MB each and are **not** stored in
-this repository. Their SHA-256 digests are recorded in
-[`docker/SHA256SUMS`](docker/SHA256SUMS) so a downloaded copy can be verified
-against the packaged submission.
+The two `checkpoint_best.pth` files are hosted in the
+[AURA model repository on Hugging Face](https://huggingface.co/hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy).
+Download the complete inference bundle with:
+
+```bash
+hf download hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy \
+  --local-dir aura-models
+```
+
+The repository preserves the nnU-Net result-folder layout expected by the
+inference container. Copy its `models/` directory into `docker/models/`. The
+SHA-256 digests are recorded in [`docker/SHA256SUMS`](docker/SHA256SUMS) so the
+downloaded files can be verified against the packaged submission.
 
 | Branch | Dataset | Trainer | Fold | Best epoch |
 | --- | --- | --- | --- | --- |
