@@ -143,6 +143,24 @@ The exact 5-fold split is provided in [`results/splits/splits_final.json`](resul
 }
 ```
 
+Please also cite nnU-Net v2, which provides the training and inference
+framework used in this work:
+
+```bibtex
+@article{isensee2021nnunet,
+  title   = {nnU-Net: a self-configuring method for deep learning-based
+             biomedical image segmentation},
+  author  = {Isensee, Fabian and Jaeger, Paul F. and Kohl, Simon A. A. and
+             Petersen, Jens and Maier-Hein, Klaus H.},
+  journal = {Nature Methods},
+  volume  = {18},
+  number  = {2},
+  pages   = {203--211},
+  year    = {2021},
+  doi     = {10.1038/s41592-020-01008-z}
+}
+```
+
 ## License
 
 Apache License 2.0. See [LICENSE](LICENSE). Challenge data remains subject to
